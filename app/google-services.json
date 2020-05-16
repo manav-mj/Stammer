@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "168033337867",
+    "firebase_url": "https://stammer-ba6bb.firebaseio.com",
+    "project_id": "stammer-ba6bb",
+    "storage_bucket": "stammer-ba6bb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:168033337867:android:34a36196b486a2157e7d0e",
+        "android_client_info": {
+          "package_name": "com.mohit.stammer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "168033337867-k2kl35gaap8tr4kp7n7ovik8perm4ppj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mohit.stammer",
+            "certificate_hash": "f8c640084cb67959b6346d26190661465b64c5e1"
+          }
+        },
+        {
+          "client_id": "168033337867-r4lf2bc2ae5gc1p7rstfdp35uj9f3292.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCvyg7xdD1jvwrw5tGDLyURjTt_0ir5qNQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "168033337867-r4lf2bc2ae5gc1p7rstfdp35uj9f3292.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

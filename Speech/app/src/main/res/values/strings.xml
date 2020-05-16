@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Speech</string>
+    <string name="text_description">In this task you have to speak in front of your smartphone.
+        You have to talk about the picture given below for a total of 20 mins.</string>
+    <string name="case_text_description">In this task you have to read the article of ABC and finish it.</string>
+    <string name="task_recording">In this task you have to speak in front of your smartphone. You have to talk about the picture given below for a total of 15 mins.</string>
+    <string name="case_text">In this task you have to speak in front of your smartphone. You have to narrate the given below text. In this task you have to speak in front of your smartphone.
+        You have to narrate the given below text. In this task you have to speak in front of your smartphone. You have to narrate the given below text.
+        In this task you have to speak in front of your smartphone. You have to narrate the given below text.
+        In this task you have to speak in front of your smartphone. You have to narrate the given below text. In this task you have to speak in front of your smartphone.
+        You have to narrate the given below text. You have to narrate the given below text. In this task you have to speak in front of your smartphone. You have to narrate the given below text.
+        You have to narrate the given below text. In this task you have to speak in front of your smartphone. You have to narrate the given below text.</string>
+    <string name="spread_awareness_description">Go to a public place and educate a person about stammering by telling him not to stop anyone who stammers from speaking. People who stammer should be heard and not bullied.</string>
+    <string name="talk_to_stranger_description">In this task you have to go out of your home or workplace and talk with a stranger. You can ask him any question or just get in a small discussion.</string>
+    <string name="meditation_text">For completing this task you have to meditate for minimum 30 mins.</string>
+</resources>
+
