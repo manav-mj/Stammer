@@ -1,6 +1,7 @@
 package com.mohit.stammer;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
@@ -76,8 +77,15 @@ public class LoginActivity extends AppCompatActivity {
                         try {
                             if (task.isSuccessful()) {
                                 Toast.makeText(LoginActivity.this, "Logged in successfully", Toast.LENGTH_SHORT).show();
-                                startActivity(new Intent(getApplicationContext(), DashboardActivity.class));
+                                SharedPreferences sp = getSharedPreferences("stammer", MODE_PRIVATE);
+
                                 progressBar.setVisibility(View.GONE);
+
+                                if (sp.getBoolean("onboarding", false)) {
+                                    startActivity(new Intent(getApplicationContext(), DashboardActivity.class));
+                                } else {
+                                    startActivity(new Intent(getApplicationContext(), OnboardingActivity.class));
+                                }
 
                                 Email.setText(null);
                                 Password.setText(null);
