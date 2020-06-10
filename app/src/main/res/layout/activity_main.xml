@@ -20,19 +20,17 @@
         app:layout_constraintVertical_bias="0.152"
         app:srcCompat="@drawable/component" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/sign_up"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
+        android:layout_height="60dp"
         android:layout_marginLeft="25dp"
         android:layout_marginRight="25dp"
-        android:background="@drawable/round_corner_button"
         android:onClick="login"
-        android:padding="15dp"
         android:text="Login"
         android:textColor="#EEF3F5"
         android:textSize="18sp"
+        app:cornerRadius="12dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
@@ -40,22 +38,25 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.828" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/button3"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="60dp"
         android:layout_marginLeft="25dp"
         android:layout_marginRight="25dp"
-        android:background="@drawable/round_blue_border"
         android:onClick="signIn"
         android:text="Sign Up"
         android:textColor="#6354F0"
         android:textSize="18sp"
+        app:cornerRadius="12dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.931" />
+        app:layout_constraintVertical_bias="0.931"
+        app:strokeColor="@color/colorPrimary"
+        app:strokeWidth="2dp" />
 
     <TextView
         android:id="@+id/textView3"
