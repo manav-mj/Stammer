@@ -21,7 +21,7 @@ import com.google.firebase.auth.FirebaseAuth;
 
 public class StartActivity extends AppCompatActivity {
 
-    EditText name, age,city, email,password, conpassword;
+    EditText name, age, city, email, password, conpassword;
     Button sign_up;
     FirebaseAuth Auth;
     ProgressBar progressBar;
@@ -33,17 +33,16 @@ public class StartActivity extends AppCompatActivity {
         setContentView(R.layout.start);
 
 
-
         name = findViewById(R.id.name);
         age = findViewById(R.id.age);
         city = findViewById(R.id.city);
         sign_up = findViewById(R.id.sign_up);
-        email =findViewById(R.id.email);
+        email = findViewById(R.id.email);
         password = findViewById(R.id.password);
         conpassword = findViewById(R.id.conpassword);
 
 
-            Auth = FirebaseAuth.getInstance();
+        Auth = FirebaseAuth.getInstance();
 
 
 //        if (Auth.getCurrentUser() !=  null)    {
@@ -55,9 +54,6 @@ public class StartActivity extends AppCompatActivity {
 //        }
 
 
-
-
-
         sign_up.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -66,40 +62,36 @@ public class StartActivity extends AppCompatActivity {
                 String pass = password.getText().toString().trim();
 
 
-                if (TextUtils.isEmpty(Email)){
+                if (TextUtils.isEmpty(Email)) {
 
                     email.setError("Mobile number is required");
                     return;
 
                 }
 
-                if (TextUtils.isEmpty(pass)){
+                if (TextUtils.isEmpty(pass)) {
 
                     password.setError("Password is required");
                     return;
 
                 }
 
-                if (pass.length()<6){
+                if (pass.length() < 6) {
                     password.setError("The password is weak");
 
                     return;
                 }
 
 
-
-
-                Auth.createUserWithEmailAndPassword(Email,pass).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+                Auth.createUserWithEmailAndPassword(Email, pass).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
 
-                        if(task.isSuccessful()){
+                        if (task.isSuccessful()) {
                             Toast.makeText(StartActivity.this, "User Created Successfully ", Toast.LENGTH_SHORT).show();
-                        startActivity(new Intent(getApplicationContext(), DashboardActivity.class));
-                        }
-
-                        else{
-                            Toast.makeText(StartActivity.this, "Error "+ task.getException().getMessage(), Toast.LENGTH_SHORT).show();
+                            startActivity(new Intent(getApplicationContext(), DashboardActivity.class));
+                        } else {
+                            Toast.makeText(StartActivity.this, "Error " + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
                         }
 
 
@@ -107,27 +99,18 @@ public class StartActivity extends AppCompatActivity {
                 });
 
 
-
             }
         });
 
 
-
-
-
-
-
-
     }
 
-    public void login(View view){
+    public void login(View view) {
 
         Intent intent = new Intent(this, LoginActivity.class);
 
         startActivity(intent);
     }
-
-
 
 
 }
