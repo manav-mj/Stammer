@@ -3,11 +3,9 @@ package com.mohit.stammer;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
-import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.Button;
-import android.widget.TextView;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
@@ -24,13 +22,12 @@ import com.google.firebase.auth.FirebaseAuth;
 public class LoginActivity extends AppCompatActivity {
 
 
-
     EditText Email, Password;
     Button login;
     ProgressBar progressBar;
     FirebaseAuth Auth = FirebaseAuth.getInstance();
 
-    public void signIn (View view){
+    public void signIn(View view) {
         Intent intent = new Intent(this, StartActivity.class);
         startActivity(intent);
     }
@@ -38,7 +35,7 @@ public class LoginActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.log_in);
+        setContentView(R.layout.activity_login);
 
         Email = findViewById(R.id.Email);
         Password = findViewById(R.id.Password);
@@ -69,30 +66,29 @@ public class LoginActivity extends AppCompatActivity {
                 }
 
 
-                   progressBar.setVisibility(View.VISIBLE);
+                progressBar.setVisibility(View.VISIBLE);
 
-                Auth.signInWithEmailAndPassword(email,pass).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
-
+                Auth.signInWithEmailAndPassword(email, pass).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
 
 
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
-                        try {if (task.isSuccessful()){
-                            Toast.makeText(LoginActivity.this, "Logged in successfully", Toast.LENGTH_SHORT).show();
-                            startActivity(new Intent(getApplicationContext(),DashboardActivity.class));
-                            progressBar.setVisibility(View.GONE);
+                        try {
+                            if (task.isSuccessful()) {
+                                Toast.makeText(LoginActivity.this, "Logged in successfully", Toast.LENGTH_SHORT).show();
+                                startActivity(new Intent(getApplicationContext(), DashboardActivity.class));
+                                progressBar.setVisibility(View.GONE);
 
-                            Email.setText(null);
-                            Password.setText(null);
+                                Email.setText(null);
+                                Password.setText(null);
 
-                        }else {
-                            Toast.makeText(LoginActivity.this, "Error "+ task.getException().getMessage(), Toast.LENGTH_SHORT).show();
-                            progressBar.setVisibility(View.GONE);
+                            } else {
+                                Toast.makeText(LoginActivity.this, "Error " + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
+                                progressBar.setVisibility(View.GONE);
 
-                        }
+                            }
 
-                        }
-                        catch(NullPointerException e) {
+                        } catch (NullPointerException e) {
                             Toast.makeText(LoginActivity.this, "Null pointer Exception", Toast.LENGTH_SHORT).show();
                         }
                     }
@@ -100,8 +96,6 @@ public class LoginActivity extends AppCompatActivity {
 
             }
         });
-
-
 
 
     }
