@@ -21,6 +21,7 @@
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/sign_up"
+        style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
         android:layout_width="0dp"
         android:layout_height="60dp"
         android:layout_marginStart="@dimen/activity_horizontal_margin"
