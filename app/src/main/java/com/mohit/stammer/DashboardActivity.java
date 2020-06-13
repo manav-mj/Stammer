@@ -25,6 +25,7 @@ public class DashboardActivity extends AppCompatActivity {
         FirebaseAuth.getInstance().signOut();
         Intent intent = new Intent(this ,MainActivity.class);
         startActivity(intent);
+        getSharedPreferences("stammer", MODE_PRIVATE).edit().remove("user_id").apply();
         Toast.makeText(this, "Logged out successfully" , Toast.LENGTH_SHORT).show();
     }
 

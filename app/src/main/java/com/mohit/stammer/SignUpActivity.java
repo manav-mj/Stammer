@@ -19,7 +19,7 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 
 
-public class StartActivity extends AppCompatActivity {
+public class SignUpActivity extends AppCompatActivity {
 
     EditText name, age, city, email, password, conpassword;
     Button sign_up;
@@ -30,8 +30,7 @@ public class StartActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.start);
-
+        setContentView(R.layout.activity_signup);
 
         name = findViewById(R.id.name);
         age = findViewById(R.id.age);
@@ -88,10 +87,10 @@ public class StartActivity extends AppCompatActivity {
                     public void onComplete(@NonNull Task<AuthResult> task) {
 
                         if (task.isSuccessful()) {
-                            Toast.makeText(StartActivity.this, "User Created Successfully ", Toast.LENGTH_SHORT).show();
-                            startActivity(new Intent(getApplicationContext(), DashboardActivity.class));
+                            Toast.makeText(SignUpActivity.this, "User Created Successfully ", Toast.LENGTH_SHORT).show();
+                            startActivity(new Intent(getApplicationContext(), OnboardingActivity.class));
                         } else {
-                            Toast.makeText(StartActivity.this, "Error " + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
+                            Toast.makeText(SignUpActivity.this, "Error " + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
                         }
 
 

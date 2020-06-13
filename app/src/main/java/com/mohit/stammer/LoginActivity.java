@@ -29,7 +29,7 @@ public class LoginActivity extends AppCompatActivity {
     FirebaseAuth Auth = FirebaseAuth.getInstance();
 
     public void signIn(View view) {
-        Intent intent = new Intent(this, StartActivity.class);
+        Intent intent = new Intent(this, SignUpActivity.class);
         startActivity(intent);
     }
 
@@ -78,6 +78,8 @@ public class LoginActivity extends AppCompatActivity {
                             if (task.isSuccessful()) {
                                 Toast.makeText(LoginActivity.this, "Logged in successfully", Toast.LENGTH_SHORT).show();
                                 SharedPreferences sp = getSharedPreferences("stammer", MODE_PRIVATE);
+
+                                sp.edit().putString("user_id", task.getResult().getUser().getUid()).apply();
 
                                 progressBar.setVisibility(View.GONE);
 
