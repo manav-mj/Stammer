@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SpeechTherapyActivity">
+    tools:context=".SpreadAwarenessActivity">
 
     <LinearLayout
         android:id="@+id/actionBar"
@@ -32,7 +32,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
-            android:text="Speech Practice"
+            android:text="Task Description"
             android:textStyle="bold"
             android:textColor="@android:color/background_dark"
             android:textSize="23sp" />
@@ -67,7 +67,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:text="Daily Speech Practice"
+            android:text="Watch stammering techniques video"
             android:textSize="18sp" />
 
         <TextView
@@ -84,12 +84,13 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:text="In this task you have to speak in front of your smartphone .You have to talk about the picture given below for a total of 20 mins. "
+            android:text="You have to watch the video that describes techniques of speech therapy. Watch them carefully as you will be using them in the next task."
             android:textSize="18sp" />
     </LinearLayout>
 
 
     <com.google.android.material.button.MaterialButton
+        android:onClick="watch_video"
         android:id="@+id/button"
         style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
         android:layout_width="0dp"

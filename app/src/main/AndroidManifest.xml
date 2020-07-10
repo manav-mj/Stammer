@@ -11,12 +11,22 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".speech_therapy"
-            android:parentActivityName=".LoginActivity"></activity>
-        <activity android:name=".CaseStudy"
-            android:parentActivityName=".DashboardActivity"/>
-        <activity android:name=".SpreadAwareness"
-            android:parentActivityName=".DashboardActivity"/>
+
+        <activity
+            android:name=".SpeechTherapyActivity"
+            android:parentActivityName=".LoginActivity"/>
+        <activity
+            android:name=".VideoWatchActivity"
+            android:parentActivityName=".VideoTaskActivity" />
+        <activity
+            android:name=".VideoTaskActivity"
+            android:parentActivityName=".DashboardActivity" />
+        <activity
+            android:name=".CaseStudyActivity"
+            android:parentActivityName=".DashboardActivity" />
+        <activity
+            android:name=".SpreadAwarenessActivity"
+            android:parentActivityName=".DashboardActivity" />
         <activity
             android:name=".LoginActivity"
             android:parentActivityName=".MainActivity" />

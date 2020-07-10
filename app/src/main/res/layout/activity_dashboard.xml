@@ -183,8 +183,8 @@
 
                 <ImageView
                     android:id="@+id/imageView3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.0"
@@ -213,6 +213,7 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <TextView
+                        android:onClick="watch_video"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/nunitosans_semibold"
@@ -235,7 +236,6 @@
                     android:id="@+id/imageView13"
                     android:layout_width="22dp"
                     android:layout_height="22dp"
-                    android:padding="2dp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.0"
@@ -312,8 +312,8 @@
 
                 <ImageView
                     android:id="@+id/imageView31"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.0"
@@ -424,7 +424,6 @@
                     android:id="@+id/imageView1113"
                     android:layout_width="22dp"
                     android:layout_height="22dp"
-                    android:padding="2dp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.0"
@@ -501,8 +500,8 @@
 
                 <ImageView
                     android:id="@+id/imageView311"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.0"
@@ -554,7 +553,6 @@
                     android:id="@+id/imageView11113"
                     android:layout_width="22dp"
                     android:layout_height="22dp"
-                    android:padding="2dp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.0"
@@ -614,7 +612,6 @@
                     android:id="@+id/imageView111113"
                     android:layout_width="22dp"
                     android:layout_height="22dp"
-                    android:padding="2dp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.0"

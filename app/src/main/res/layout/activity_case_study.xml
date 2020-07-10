@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SpeechTherapyActivity">
+    tools:context=".CaseStudyActivity">
 
     <LinearLayout
         android:id="@+id/actionBar"
@@ -32,7 +32,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
-            android:text="Speech Practice"
+            android:text="Case Study"
             android:textStyle="bold"
             android:textColor="@android:color/background_dark"
             android:textSize="23sp" />
@@ -67,7 +67,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:text="Daily Speech Practice"
+            android:text="Read Latest Case Study"
             android:textSize="18sp" />
 
         <TextView
@@ -84,7 +84,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:text="In this task you have to speak in front of your smartphone .You have to talk about the picture given below for a total of 20 mins. "
+            android:text="In this task you have to read the article of ABC and finish it."
             android:textSize="18sp" />
     </LinearLayout>
 
