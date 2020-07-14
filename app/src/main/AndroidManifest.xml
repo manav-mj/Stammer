@@ -3,6 +3,7 @@
     package="com.mohit.stammer">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
 
     <application
         android:allowBackup="true"
@@ -13,19 +14,22 @@
         android:theme="@style/AppTheme">
 
         <activity
-            android:name=".SpeechTherapyActivity"
+            android:name=".tasks.PictureWatchActivity"
+            android:parentActivityName=".tasks.SpeechTherapyActivity"/>
+        <activity
+            android:name=".tasks.SpeechTherapyActivity"
             android:parentActivityName=".LoginActivity"/>
         <activity
-            android:name=".VideoWatchActivity"
-            android:parentActivityName=".VideoTaskActivity" />
+            android:name=".tasks.VideoWatchActivity"
+            android:parentActivityName=".tasks.VideoTaskActivity" />
         <activity
-            android:name=".VideoTaskActivity"
+            android:name=".tasks.VideoTaskActivity"
             android:parentActivityName=".DashboardActivity" />
         <activity
-            android:name=".CaseStudyActivity"
+            android:name=".tasks.CaseStudyActivity"
             android:parentActivityName=".DashboardActivity" />
         <activity
-            android:name=".SpreadAwarenessActivity"
+            android:name=".tasks.SpreadAwarenessActivity"
             android:parentActivityName=".DashboardActivity" />
         <activity
             android:name=".LoginActivity"

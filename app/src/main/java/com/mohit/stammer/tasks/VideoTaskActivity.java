@@ -1,10 +1,12 @@
-package com.mohit.stammer;
+package com.mohit.stammer.tasks;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.mohit.stammer.R;
 
 public class VideoTaskActivity extends AppCompatActivity {
 

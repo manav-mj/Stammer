@@ -12,8 +12,11 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.firebase.auth.FirebaseAuth;
+import com.mohit.stammer.tasks.CaseStudyActivity;
+import com.mohit.stammer.tasks.SpeechTherapyActivity;
+import com.mohit.stammer.tasks.SpreadAwarenessActivity;
+import com.mohit.stammer.tasks.VideoTaskActivity;
 
-import java.lang.reflect.Array;
 import java.text.DecimalFormat;
 import java.util.ArrayList;
 

@@ -1,4 +1,4 @@
-package com.mohit.stammer;
+package com.mohit.stammer.tasks;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -10,6 +10,7 @@ import android.webkit.WebView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.mohit.stammer.R;
 import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView;
 
 public class VideoWatchActivity extends AppCompatActivity {
