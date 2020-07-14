@@ -90,7 +90,7 @@
 
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/recordingButton"
+        android:onClick="startTask"
         style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
         android:layout_width="0dp"
         android:layout_height="60dp"
