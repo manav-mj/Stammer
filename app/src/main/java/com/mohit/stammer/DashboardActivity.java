@@ -13,6 +13,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.mohit.stammer.tasks.CaseStudyActivity;
+import com.mohit.stammer.tasks.MeditationTaskActivity;
 import com.mohit.stammer.tasks.ReadTaskActivity;
 import com.mohit.stammer.tasks.SpeechTherapyActivity;
 import com.mohit.stammer.tasks.SpreadAwarenessActivity;
@@ -101,5 +102,10 @@ public class DashboardActivity extends AppCompatActivity {
         Intent intent = new Intent(this, SpreadAwarenessActivity.class);
         startActivity(intent);
     }
+    public void meditationTask(View view) {
+        Intent intent = new Intent(this, MeditationTaskActivity.class);
+        startActivity(intent);
+    }
+
 }
 

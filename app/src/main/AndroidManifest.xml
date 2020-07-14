@@ -14,6 +14,12 @@
         android:theme="@style/AppTheme">
 
         <activity
+            android:name=".tasks.MeditationTimingActivity"
+            android:parentActivityName=".tasks.MeditationTaskActivity"/>
+        <activity
+            android:name=".tasks.MeditationTaskActivity"
+            android:parentActivityName=".DashboardActivity"/>
+        <activity
             android:name=".tasks.SpreadAwarenessTimingActivity"
             android:parentActivityName=".tasks.SpreadAwarenessActivity"/>
         <activity
