@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".tasks.VideoWatchActivity">
+    tools:context=".tasks.StrangerTaskActivity">
 
     <LinearLayout
         android:id="@+id/actionBar"
@@ -48,44 +48,79 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:orientation="vertical"
+        android:paddingStart="32dp"
+        android:paddingEnd="32dp"
         app:layout_constraintBottom_toTopOf="@+id/recordingButton"
         app:layout_constraintTop_toBottomOf="@+id/actionBar">
 
-        <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
-            android:id="@+id/youtube_player_view"
-            android:layout_width="match_parent"
-            android:layout_height="220dp"
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_marginTop="32dp"
-            app:autoPlay="false"
-            app:useWebUi="true"
-            app:videoId="ZGDGTKfNe9c" />
+            android:text="Task"
+            android:textColor="@android:color/background_dark"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Talk to a Stranger"
+            android:textSize="18sp" />
 
         <TextView
             android:id="@+id/textView10"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="32dp"
             android:layout_marginTop="32dp"
-            android:layout_marginEnd="32dp"
-            android:text="5 Stuttering Techniques"
+            android:text="Description"
             android:textColor="@android:color/background_dark"
-            android:textSize="20sp"
-            android:textStyle="bold" />
+            android:textSize="20sp" />
 
         <TextView
             android:id="@+id/textView11"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="32dp"
-            android:layout_marginTop="4dp"
-            android:layout_marginEnd="32dp"
-            android:text="Free from Stutter"
-            android:textSize="16sp" />
+            android:layout_marginTop="8dp"
+            android:text="In this task you have to go out of your home or workplace and talk with a stranger. You can ask him any question or just get in a small discussion."
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="Select Type of Proof"
+            android:textColor="@android:color/background_dark"
+            android:textSize="20sp" />
+
+        <RadioGroup
+            style="?attr/singleSelection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="Upload a Selfie" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Upload Recording" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Write about the experience" />
+        </RadioGroup>
     </LinearLayout>
 
 
     <com.google.android.material.button.MaterialButton
-        android:onClick="finish"
         android:id="@+id/recordingButton"
         style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
         android:layout_width="0dp"
@@ -94,7 +129,8 @@
         android:layout_marginEnd="@dimen/activity_horizontal_margin"
         android:layout_marginBottom="16dp"
         android:inputType="text"
-        android:text="Finish Task"
+        android:onClick="startTask"
+        android:text="Next"
         android:textColor="#EEF3F5"
         android:textSize="18sp"
         app:cornerRadius="@dimen/common_button_corner_radius"

@@ -1,12 +1,8 @@
 package com.mohit.stammer.tasks;
 
-import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
-import android.webkit.WebChromeClient;
-import android.webkit.WebSettings;
-import android.webkit.WebView;
 
 import androidx.appcompat.app.AppCompatActivity;
 

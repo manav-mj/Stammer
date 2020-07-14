@@ -17,6 +17,7 @@ import com.mohit.stammer.tasks.MeditationTaskActivity;
 import com.mohit.stammer.tasks.ReadTaskActivity;
 import com.mohit.stammer.tasks.SpeechTherapyActivity;
 import com.mohit.stammer.tasks.SpreadAwarenessActivity;
+import com.mohit.stammer.tasks.StrangerTaskActivity;
 import com.mohit.stammer.tasks.VideoTaskActivity;
 
 import java.text.DecimalFormat;
@@ -102,10 +103,15 @@ public class DashboardActivity extends AppCompatActivity {
         Intent intent = new Intent(this, SpreadAwarenessActivity.class);
         startActivity(intent);
     }
+
     public void meditationTask(View view) {
         Intent intent = new Intent(this, MeditationTaskActivity.class);
         startActivity(intent);
     }
 
+    public void strangerTask(View view) {
+        Intent intent = new Intent(this, StrangerTaskActivity.class);
+        startActivity(intent);
+    }
 }
 

@@ -2,8 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.mohit.stammer">
 
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
 
     <application
         android:allowBackup="true"
@@ -14,32 +15,38 @@
         android:theme="@style/AppTheme">
 
         <activity
+            android:name=".tasks.UploadActivity"
+            android:parentActivityName=".tasks.UploadActivity"/>
+        <activity
+            android:name=".tasks.StrangerTaskActivity"
+            android:parentActivityName=".DashboardActivity" />
+        <activity
             android:name=".tasks.MeditationTimingActivity"
-            android:parentActivityName=".tasks.MeditationTaskActivity"/>
+            android:parentActivityName=".tasks.MeditationTaskActivity" />
         <activity
             android:name=".tasks.MeditationTaskActivity"
-            android:parentActivityName=".DashboardActivity"/>
+            android:parentActivityName=".DashboardActivity" />
         <activity
             android:name=".tasks.SpreadAwarenessTimingActivity"
-            android:parentActivityName=".tasks.SpreadAwarenessActivity"/>
+            android:parentActivityName=".tasks.SpreadAwarenessActivity" />
         <activity
             android:name=".tasks.ReadCaseStudyActivity"
-            android:parentActivityName=".tasks.CaseStudyActivity"/>
+            android:parentActivityName=".tasks.CaseStudyActivity" />
         <activity
             android:name=".tasks.ReadTaskActivity"
-            android:parentActivityName=".DashboardActivity"/>
+            android:parentActivityName=".DashboardActivity" />
         <activity
             android:name=".tasks.ReadContentActivity"
-            android:parentActivityName=".tasks.ReadTaskActivity"/>
+            android:parentActivityName=".tasks.ReadTaskActivity" />
         <activity
             android:name=".tasks.PictureAnalyzeActivity"
-            android:parentActivityName=".tasks.PictureWatchActivity"/>
+            android:parentActivityName=".tasks.PictureWatchActivity" />
         <activity
             android:name=".tasks.PictureWatchActivity"
-            android:parentActivityName=".tasks.SpeechTherapyActivity"/>
+            android:parentActivityName=".tasks.SpeechTherapyActivity" />
         <activity
             android:name=".tasks.SpeechTherapyActivity"
-            android:parentActivityName=".LoginActivity"/>
+            android:parentActivityName=".LoginActivity" />
         <activity
             android:name=".tasks.VideoWatchActivity"
             android:parentActivityName=".tasks.VideoTaskActivity" />
