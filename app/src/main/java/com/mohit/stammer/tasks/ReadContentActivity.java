@@ -7,14 +7,12 @@ import android.os.Handler;
 import android.view.View;
 import android.view.animation.AlphaAnimation;
 import android.view.animation.Animation;
-import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
-import androidx.viewpager.widget.ViewPager;
 
 import com.karumi.dexter.Dexter;
 import com.karumi.dexter.PermissionToken;
@@ -26,7 +24,7 @@ import com.mohit.stammer.R;
 
 import java.text.DecimalFormat;
 
-public class PictureWatchActivity extends AppCompatActivity {
+public class ReadContentActivity extends AppCompatActivity {
 
     boolean isRecording = false;
     long recordingTimeInSeconds = 0;
@@ -60,7 +58,7 @@ public class PictureWatchActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_picture_watch);
+        setContentView(R.layout.activity_read_content);
 
         recordingButton = findViewById(R.id.recordingButton);
         recordingIcon = findViewById(R.id.recordingIcon);
@@ -113,7 +111,7 @@ public class PictureWatchActivity extends AppCompatActivity {
 
     public void analyzeTask(View view) {
         Intent intent = new Intent(this, PictureAnalyzeActivity.class);
-        intent.putExtra("task", "task2");
+        intent.putExtra("task", "task3");
         startActivity(intent);
         finish();
     }

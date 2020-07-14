@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".tasks.CaseStudyActivity">
+    tools:context=".tasks.SpreadAwarenessActivity">
 
     <LinearLayout
         android:id="@+id/actionBar"
@@ -32,7 +32,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
-            android:text="Case Study"
+            android:text="Task Description"
             android:textStyle="bold"
             android:textColor="@android:color/background_dark"
             android:textSize="23sp" />
@@ -67,7 +67,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:text="Read Latest Case Study"
+            android:text="Daily Speech Practice"
             android:textSize="18sp" />
 
         <TextView
@@ -84,13 +84,14 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:text="In this task you have to read the article of ABC and finish it."
+            android:text="In this task you have to speak in front of your smartphone. You have to narrate the given below text."
             android:textSize="18sp" />
     </LinearLayout>
 
 
     <com.google.android.material.button.MaterialButton
         android:onClick="startTask"
+        android:id="@+id/recordingButton"
         style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
         android:layout_width="0dp"
         android:layout_height="60dp"

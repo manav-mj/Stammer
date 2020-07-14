@@ -1,6 +1,7 @@
 package com.mohit.stammer.tasks;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 
@@ -8,17 +9,18 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.mohit.stammer.R;
 
-public class CaseStudyActivity extends AppCompatActivity {
+public class ReadCaseStudyActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_case_study);
+        setContentView(R.layout.activity_read_case_study);
     }
 
-    public void startTask(View view) {
-        Intent intent = new Intent(this, ReadCaseStudyActivity.class);
-        startActivity(intent);
+    public void finish(View view) {
+        SharedPreferences sp = getSharedPreferences("stammer", MODE_PRIVATE);
+        sp.edit().putBoolean("task4", true).apply();
+
         finish();
     }
 }

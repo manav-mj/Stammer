@@ -346,7 +346,7 @@
                         android:layout_height="wrap_content"
                         android:foreground="?attr/selectableItemBackground"
                         android:gravity="center"
-                        android:onClick="speech_therapy"
+                        android:onClick="readingTask"
                         android:padding="15dp"
                         android:text="Daily Speech Practice"
                         android:textColor="#FFFFFF"

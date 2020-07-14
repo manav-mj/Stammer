@@ -18,6 +18,7 @@ public class SpeechTherapyActivity extends AppCompatActivity {
 
     public void showPicture(View view) {
         startActivity(new Intent(this, PictureWatchActivity.class));
+        finish();
     }
 
 

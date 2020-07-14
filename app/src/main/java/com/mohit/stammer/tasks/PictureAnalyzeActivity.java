@@ -19,7 +19,7 @@ public class PictureAnalyzeActivity extends AppCompatActivity {
 
     public void finish(View view) {
         SharedPreferences sp = getSharedPreferences("stammer", MODE_PRIVATE);
-        sp.edit().putBoolean("task2", true).apply();
+        sp.edit().putBoolean(getIntent().getStringExtra("task"), true).apply();
 
         finish();
     }

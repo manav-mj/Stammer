@@ -13,6 +13,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.mohit.stammer.tasks.CaseStudyActivity;
+import com.mohit.stammer.tasks.ReadTaskActivity;
 import com.mohit.stammer.tasks.SpeechTherapyActivity;
 import com.mohit.stammer.tasks.SpreadAwarenessActivity;
 import com.mohit.stammer.tasks.VideoTaskActivity;
@@ -83,6 +84,11 @@ public class DashboardActivity extends AppCompatActivity {
 
     public void speech_therapy(View view) {
         Intent intent = new Intent(this, SpeechTherapyActivity.class);
+        startActivity(intent);
+    }
+
+    public void readingTask(View view) {
+        Intent intent = new Intent(this, ReadTaskActivity.class);
         startActivity(intent);
     }
 
